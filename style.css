@@ -1,0 +1,314 @@
+/* ---------- General ---------- */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  background-image: url(/mca/img/back\ \(1\).jpg);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 50px;
+}
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      color: #fffefe;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #3c0a37d1;
+      font-size: 18px;
+    }
+
+/* ---------- Navbar ---------- */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #71408d;
+  padding: 15px 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+.nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      padding: 12px 20px;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #b700ff;
+      border-radius: 5px;
+    }
+
+    /* ====== DROPDOWN MENU ====== */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 45px;
+      left: 0;
+      background-color: rgba(41, 18, 45, 0.9);
+      min-width: 180px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(60, 58, 58, 0.5);
+    }
+
+    .dropdown-content a {
+      padding: 10px 15px;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #b700ff;
+    }
+
+    /* Show dropdown on hover */
+    .nav-links li:hover .dropdown-content {
+      display: block;
+    }
+
+
+/* ---------- Albums Section ---------- */
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 50px;
+}
+
+.album {
+  background-color: #71408d;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(45, 1, 61, 0.947);
+  transition: transform 0.3s;
+}
+
+.album:hover {
+  transform: scale(1.05);
+}
+
+.logo img {
+  float: left;
+  margin-left: 25px;
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.album img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.album p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* ---------- Artists Section ---------- */
+.artists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+}
+
+.artist {
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s;
+}
+
+.artist:hover {
+  transform: scale(1.1);
+}
+
+.artist img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Footer ---------- */
+/* ====== FOOTER STYLING ====== */
+footer {
+  background-color:#20002db3;
+  color: #ccc;
+  padding: 40px 60px;
+  margin-top: 80px;
+  border-top: 1px solid #333;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  color: #ebcdf7;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-section p, 
+.footer-section a {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #ebcdf7;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  color:#ebcdf7;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+.footer-bottom span {
+  color: #ebcdf7;
+  font-weight: bold;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.song {
+  background-color: rgba(113, 64, 141, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.song:hover {
+  transform: translateY(-5px);
+  background-color: rgba(43, 5, 56, 0.95);
+}
+
+.song span {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 10px;
+  outline: none;
+}
+
+.song-list {
+      max-width: 800px;
+      margin: 40px auto 80px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .song-list li {
+      background-color: rgba(113, 64, 141, 0.9);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 15px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .song-list li:hover {
+      transform: translateY(-5px);
+      background-color: rgba(43, 5, 56, 0.95);
+    }
+
+    .song-list span {
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 18px;
+    }

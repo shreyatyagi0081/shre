@@ -2,142 +2,261 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beat Box</title>
+    <title>BEATBOX-Where Music Comes Alive!</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   </head>
+
   <body>
-    <!-- Navbar -->
+
     <nav>
-      <div class="logo">BEAT BOX 🎧</div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-
-        <li>
-          <a href="#">Albums ▾</a>
-          <div class="dropdown-content">
-            <a href="pop.html">Pop</a>
-            <a href="rock.html">Rock</a>
-            <a href="jazz.html">Jazz</a>
-          </div>
-        </li>
-
-        <li>
-          <a href="#">Artists ▾</a>
-          <div class="dropdown-content">
-            <a href="artist1.html">Artist 1</a>
-            <a href="artist2.html">Artist 2</a>
-            <a href="artist3.html">Artist 3</a>
-            <a href="artist4.html">Artist 4</a>
-          </div>
-        </li>
-
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+        <ul class="nav-menu">
+            <li class="brand">
+                <img src="/img/ios 14 _ purple neon.jpg" alt="Logo"> BEAT BOX
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Playlist</a></li>
+            <li class="dropdown">
+                <a href="#">Genres <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Pop</a></li>
+                    <li><a href="#">Rock</a></li>
+                    <li><a href="#">Hip-Hop</a></li>
+                    <li><a href="#">Jazz</a></li>
+                    <li><a href="#">Classical</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Top Charts</a></li>
+            <li class="dropdown">
+                <a href="#">Artists <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Arijit Singh</a></li>
+                    <li><a href="#">Taylor Swift</a></li>
+                    <li><a href="#">Eminem</a></li>
+                    <li><a href="#">BTS</a></li>
+                    <li><a href="#">Ed Sheeran</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Albums</a></li>
+            <li><a href="#">Favorites ❤️</a></li>
+            <li class="dropdown">
+                <a href="#">Settings ⚙ <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" id="darkModeToggle">Dark Mode</a></li>
+                    <li><a href="#">Volume Control</a></li>
+                    <li><a href="#">Language</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
+    
 
-    <!-- Albums Section -->
-       <header>
-    <h1>Our Albums</h1>
-    <p>Explore trending and classic albums from your favorite artists 🎧</p>
-  </header>
+    <div class="container">
+      <div class="songList">
+        <h1>The Best Songs, Just a Click Away!</h1>
+        <div class="songitemContainer">
+          <div class="songItem">
+            <img
+              src="/img/sanam-teri-kasam-1739361500177.jpg"
+              alt="Song Cover"
+            />
+            <div class="songInfo">
+              <div class="songName">Sanam Teri Kasam</div>
+              <div class="songDuration">5:16</div>
+            </div>
+            <button class="like-btn" data-id="1">
+              <i class="fas fa-heart"></i>
+          </button>
+          </div>
+          <div class="songItem">
+            <img src="/img/download (1).jpg" alt="Song Cover" />
+            <div class="songInfo">
+              <div class="songName">Tum Hi Ho</div>
+              <div class="songDuration">4:22</div>
+            </div>
+            <button class="like-btn" data-id="1">
+              <i class="fas fa-heart"></i>
+          </button>
+          </div>
+          <div class="songItem">
+            <img src="/img/download (2).jpg" alt="Song Cover" />
+            <div class="songInfo">
+              <div class="songName">Tu Hai Toh Main Hoon</div>
+              <div class="songDuration">4:07</div>
+            </div>
+            <button class="like-btn" data-id="1">
+              <i class="fas fa-heart"></i>
+          </button>
+          </div>
+          <div class="songItem">
+            <img src="/img/download.jpg" alt="Song Cover" />
+            <div class="songInfo">
+              <div class="songName">Boy With Luv</div>
+              <div class="songDuration">3:49</div>
+            </div>
+            <button class="like-btn" data-id="1">
+              <i class="fas fa-heart"></i>
+          </button>
+          </div>
+          <div class="songItem">
+            <img src="/img/download (3).jpg" alt="Song Cover" />
+            <div class="songInfo">
+              <div class="songName">Jo Tum Mere HO</div>
+              <div class="songDuration">4:11</div>
+            </div>
+            <button class="like-btn" data-id="1">
+              <i class="fas fa-heart"></i>
+          </button>
+          </div>
+          <div class="songItem">
+            <img src="/img/download (4).jpg" alt="Song Cover" />
+            <div class="songInfo">
+              <div class="songName">Jai Shri Ram</div>
+              <div class="songDuration">3:32</div>
+            </div>
+            <button class="like-btn" data-id="1">
+              <i class="fas fa-heart"></i>
+          </button>
+          </div>
+          <div class="songItem">
+            <img src="/img/1900x1900-000000-80-0-0.jpg" alt="Song Cover" />
+            <div class="songInfo">
+              <div class="songName">My Universe</div>
+              <div class="songDuration">3:45</div>
+            </div>
+            <button class="like-btn" data-id="1">
+              <i class="fas fa-heart"></i>
+          </button>
+          </div>
+          <div class="songItem">
+            <img src="/img/download (5).jpg" alt="Song Cover" />
+            <div class="songInfo">
+              <div class="songName">Perfect</div>
+              <div class="songDuration">4:23</div>
+            </div>
+            <button class="like-btn" data-id="1">
+              <i class="fas fa-heart"></i>
+          </button>
+          </div>
+          <div class="songItem">
+            <img src="/img/download (6).jpg" alt="Song Cover" />
+            <div class="songInfo">
+              <div class="songName">APT.</div>
+              <div class="songDuration">2:49</div>
+            </div>
+            <button class="like-btn" data-id="1">
+              <i class="fas fa-heart"></i>
+          </button>
+          </div>
+          <div class="songItem">
+            <img src="/img/download (7).jpg" alt="Song Cover" />
+            <div class="songInfo">
+              <div class="songName">Die With A smile</div>
+              <div class="songDuration">4:11</div>
+            </div>
+            <button class="like-btn" data-id="1">
+              <i class="fas fa-heart"></i>
+          </button>
+          </div>
+        </div>
+      </div>
 
-    <div class="albums">
-      <div class="album">
-        <a href="/mca/abl1.html">
-          <img src="/mca/img/1989.jpg" alt="Album 1" />
-          <p>1989</p></a
-        >
-      </div>
-      <div class="album">
-        <a href="/mca/abl2.html">
-          <img src="/mca/img/om.jpg" alt="Album 2" />
-          <p>Om Shanti Om (2007)</p></a
-        >
-      </div>
-      <div class="album">
-        <a href="/mca/abl3.html">
-          <img src="/mca/img/divide.jpg" alt="Album 3" />
-          <p>÷ (Divide)</p></a
-        >
-      </div>
-      <div class="album">
-        <a href="/mca/abl4.html">
-          <img src="/mca/img/map of the soul.jpg" alt="Album 4" />
-          <p>Map of the Soul: 7</p></a
-        >
-      </div>
+      <div class="songBanner"></div>
     </div>
 
-    <!-- Artists Section -->
-     <header><h1>Popular Artists</h1></header>
-    <div class="artists">
-      <a href="/mca/art1.html"
-        ><div class="artist">
-          <img src="/mca/download (1).jpg" alt="Arijit Singh" /></div
-      ></a>
-      <a href="/mca/art2.html"
-        ><div class="artist">
-          <img src="/mca/Shreya Ghoshal.jpg" alt="Shreya Ghoshal" /></div
-      ></a>
-      <a href="/mca/art3.html"
-        ><div class="artist">
-          <img src="/mca/download.jpg" alt="Diljit Dosanjh" /></div
-      ></a>
-      <a href="/mca/art4.html"
-        ><div class="artist">
-          <img
-            src="/mca/Pritam claimed the literary theft between Blackpin's Jenny_ 'Instead of tearing the artists ____.jpg"
-            alt="Pritam"
-          /></div
-      ></a>
+    <div class="controls">
+      <button id="previous"><i class="fa fa-backward"></i></button>
+      <button id="masterPlay"><i class="fa fa-play-circle"></i></button>
+      <button id="next"><i class="fa fa-forward"></i></button>
+      <button id="shuffle"><i class="fa fa-random"></i></button>
+      <button id="repeat"><i class="fa fa-redo"></i></button>
     </div>
 
-    <!-- Footer -->
+    <div class="progress">
+      <span id="currentTime">0:00</span>
+      <input type="range" id="myProgressBar" min="0" max="100" />
+      <span id="totalTime">0:00</span>
+    </div>
+    <h3 id="masterSongName"></h3>
+
+    <div class="volume-control">
+      <i class="fa fa-volume-up"></i>
+      <input type="range" id="volume" min="0" max="100" value="100" />
+    </div>
+
+    <button id="darkMode">🌙 Toggle Dark Mode</button>
+
     <footer>
-  <div class="footer-container">
-    <!-- About Section -->
-    <div class="footer-section">
-      <h3>About BEAT BOX</h3>
-      <p>BEAT BOX is a simple front-end music player project created using HTML and CSS. 
-      It allows users to explore albums, artists, and songs in a stylish and user-friendly interface.</p>
-    </div>
+        <div class="footer-container">
+            <div class="footer-logo">🎵 BEAT BOX</div>
+            <ul class="footer-menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright">© 2025 BEATBOX. All rights reserved.</p>
+        </div>
+    </footer>
+    
 
-    <!-- Quick Links -->
-    <div class="footer-section">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Artists</a></li>
-        <li><a href="#">Albums</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
+    <script>
+        // JavaScript for Dropdown Toggle
+        document.querySelectorAll(".dropdown").forEach((dropdown) => {
+            dropdown.addEventListener("mouseover", () => {
+                dropdown.querySelector(".dropdown-menu").style.display = "block";
+            });
+            dropdown.addEventListener("mouseleave", () => {
+                dropdown.querySelector(".dropdown-menu").style.display = "none";
+            });
+        });
 
-    <!-- Contact Info -->
-    <div class="footer-section">
-      <h3>Contact Us</h3>
-      <p>Email: <a href="mailto:beatbox@gmail.com">beatbox@gmail.com</a></p>
-      <p>Phone: +91 98765 43210</p>
-    </div>
+        // JavaScript for Dark Mode Toggle
+        document.getElementById("darkModeToggle").addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        }); 
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+          const likeButtons = document.querySelectorAll(".like-btn");
+          let likedSongs = JSON.parse(localStorage.getItem("likedSongs")) || [];
+  
+          // Initialize liked songs state
+          likeButtons.forEach(button => {
+              const songId = button.getAttribute("data-id");
+              if (likedSongs.includes(songId)) {
+                  button.classList.add("liked");
+              }
+              button.addEventListener("click", () => {
+                  toggleLike(songId, button);
+              });
+          });
+  
+          function toggleLike(songId, button) {
+              if (likedSongs.includes(songId)) {
+                  likedSongs = likedSongs.filter(id => id !== songId);
+                  button.classList.remove("liked");
+              } else {
+                  likedSongs.push(songId);
+                  button.classList.add("liked");
+              }
+              localStorage.setItem("likedSongs", JSON.stringify(likedSongs));
+          }
+      });
+  </script>
 
-    <!-- Social Media -->
-    <div class="footer-section">
-      <h3>Follow Us</h3>
-      <div class="social-icons">
-        <a href="#">🎵</a>
-        <a href="#">📸</a>
-        <a href="#">▶️</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    © 2025 <span>BEAT BOX</span> 🎧
-  </div>
-</footer>
-
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/26504e4a1f.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
